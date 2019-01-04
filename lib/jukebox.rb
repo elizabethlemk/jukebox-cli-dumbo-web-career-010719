@@ -45,13 +45,13 @@ def run(songs)
   help
   puts "Please enter a command:"
   response = gets.chomp
-  if response == help
+  if response == "help"
     help
-  elsif response == list
+  elsif response == "list"
     list(songs)
-  elsif response == play
+  elsif response == "play"
     play(songs)
-  elsif response == exit
+  elsif response == "exit"
     exit_jukebox
   end
 end
